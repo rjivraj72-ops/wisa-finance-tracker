@@ -1,30 +1,30 @@
 <html><body><script>
 const txs = [
-  { date: "2026-01-10", desc: "Semester club dues (32 members)", category: "Membership", amount: 1600, type: "income" },
-  { date: "2026-01-15", desc: "Welcome back social - venue", category: "Events", amount: 350, type: "expense" },
-  { date: "2026-01-15", desc: "Welcome back social - food", category: "Events", amount: 220, type: "expense" },
-  { date: "2026-01-22", desc: "Banner and poster printing", category: "Marketing", amount: 85, type: "expense" },
-  { date: "2026-02-01", desc: "Student council grant", category: "Grants", amount: 2000, type: "income" },
-  { date: "2026-02-05", desc: "Guest speaker honorarium", category: "Events", amount: 150, type: "expense" },
-  { date: "2026-02-10", desc: "Bake sale fundraiser", category: "Fundraising", amount: 430, type: "income" },
-  { date: "2026-02-14", desc: "Valentine's event supplies", category: "Events", amount: 175, type: "expense" },
-  { date: "2026-02-20", desc: "Club t-shirt order (40 shirts)", category: "Merchandise", amount: 520, type: "expense" },
-  { date: "2026-02-25", desc: "T-shirt sales", category: "Merchandise", amount: 680, type: "income" },
-  { date: "2026-03-01", desc: "Networking night - catering", category: "Events", amount: 410, type: "expense" },
-  { date: "2026-03-01", desc: "Networking night - tickets", category: "Events", amount: 375, type: "income" },
-  { date: "2026-03-10", desc: "Software subscription (Canva)", category: "Operations", amount: 16, type: "expense" },
-  { date: "2026-03-12", desc: "Raffle fundraiser", category: "Fundraising", amount: 310, type: "income" },
-  { date: "2026-03-18", desc: "End of year formal - deposit", category: "Events", amount: 600, type: "expense" },
-  { date: "2026-03-25", desc: "Corporate sponsorship - TD Bank", category: "Sponsorship", amount: 1500, type: "income" },
-  { date: "2026-03-28", desc: "Office supplies", category: "Operations", amount: 45, type: "expense" },
-  { date: "2026-04-01", desc: "Formal ticket sales (50 tickets)", category: "Events", amount: 1250, type: "income" },
-  { date: "2026-04-02", desc: "End of year formal - final payment", category: "Events", amount: 900, type: "expense" },
-  { date: "2026-04-03", desc: "Photo booth rental", category: "Events", amount: 200, type: "expense" }
+ { date: "2026-01-10", desc: "Semester club dues (32 members)", category: "Membership", amount: 1600, type: "income" },
+ { date: "2026-01-15", desc: "Welcome back social - venue", category: "Events", amount: 350, type: "expense" },
+ { date: "2026-01-15", desc: "Welcome back social - food", category: "Events", amount: 220, type: "expense" },
+ { date: "2026-01-22", desc: "Banner and poster printing", category: "Marketing", amount: 85, type: "expense" },
+ { date: "2026-02-01", desc: "Student council grant", category: "Grants", amount: 2000, type: "income" },
+ { date: "2026-02-05", desc: "Guest speaker honorarium", category: "Events", amount: 150, type: "expense" },
+ { date: "2026-02-10", desc: "Bake sale fundraiser", category: "Fundraising", amount: 430, type: "income" },
+ { date: "2026-02-14", desc: "Valentine's event supplies", category: "Events", amount: 175, type: "expense" },
+ { date: "2026-02-20", desc: "Club t-shirt order (40 shirts)", category: "Merchandise", amount: 520, type: "expense" },
+ { date: "2026-02-25", desc: "T-shirt sales", category: "Merchandise", amount: 680, type: "income" },
+ { date: "2026-03-01", desc: "Networking night - catering", category: "Events", amount: 410, type: "expense" },
+ { date: "2026-03-01", desc: "Networking night - tickets", category: "Events", amount: 375, type: "income" },
+ { date: "2026-03-10", desc: "Software subscription (Canva)", category: "Operations", amount: 16, type: "expense" },
+ { date: "2026-03-12", desc: "Raffle fundraiser", category: "Fundraising", amount: 310, type: "income" },
+ { date: "2026-03-18", desc: "End of year formal - deposit", category: "Events", amount: 600, type: "expense" },
+ { date: "2026-03-25", desc: "Corporate sponsorship - TD Bank", category: "Sponsorship", amount: 1500, type: "income" },
+ { date: "2026-03-28", desc: "Office supplies", category: "Operations", amount: 45, type: "expense" },
+ { date: "2026-04-01", desc: "Formal ticket sales (50 tickets)", category: "Events", amount: 1250, type: "income" },
+ { date: "2026-04-02", desc: "End of year formal - final payment", category: "Events", amount: 900, type: "expense" },
+ { date: "2026-04-03", desc: "Photo booth rental", category: "Events", amount: 200, type: "expense" }
 ];
 const budgets = { "Events": 2500, "Marketing": 200, "Operations": 100, "Merchandise": 600 };
 const log = [{ ts: new Date().toISOString(), msg: "Loaded mock data for demo" }];
 localStorage.setItem("club_finance_data", JSON.stringify(txs));
 localStorage.setItem("club_finance_budgets", JSON.stringify(budgets));
 localStorage.setItem("club_finance_log", JSON.stringify(log));
-window.location.href = "/";
+window.location.href = "./index.html";
 </script></body></html>
